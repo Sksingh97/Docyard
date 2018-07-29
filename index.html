@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <title>3D View Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.6/css/bootstrap-colorpicker.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.6/js/bootstrap-colorpicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+</head>
+<body>
+<div class="container">
+        <div class="panel panel-default">
+                <div class="panel-heading">Select Number Of Rack You Want To Add</div>
+                <div class="panel-heading">
+                    
+                        <div class="input-group col-md-3" >
+                                <input type="text" id="rack" class="form-control">
+                                <span class="input-group-btn">
+                                <button class="btn btn-primary" onclick="form_fields();" type="button"> Create</button>
+                                </span>
+                        </div>
+                </div>
+         
+          <div class="panel-body">
+            <div id="lable" style="display:none ">
+              <div class="col-sm-3 nopadding form-group"><h4>Rack Name</h4></div>
+              <div class="col-sm-3 nopadding form-group"><h4>No. Of Compartment</h4></div>
+              <div class="col-sm-3 nopadding form-group"><h4>No. Of Division</h4></div>
+              <div class="col-sm-3 nopadding form-group"><h4>Color Of Rack</h4></div>
+            </div>
+          <div id="form_fields">
+                  
+            </div>
+            
+        <div class="clear" id='submit' style="display:none ">
+                <button class="btn btn-primary" onclick="fetch_data();" type="button"> Create Scene</button>
+        </div>
+          
+          </div>
+        </div>
+    
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
