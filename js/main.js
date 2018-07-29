@@ -68,7 +68,7 @@ function form_fields() {
         data: {data:scene_data},
         url: 'save.php',
         success: function(data){
-            if(data){
+            if(data==1){
                 window.location="http://localhost/Docyard/Scene.html";
             }
         },
